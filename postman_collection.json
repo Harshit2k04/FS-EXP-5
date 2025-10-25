@@ -1,0 +1,65 @@
+{
+  "info": {
+    "_postman_id": "1234abcd-5678-efgh-ijkl-9876mnop1234",
+    "name": "EXP-3 Product API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Seed Database",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/seed",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["seed"]
+        }
+      }
+    },
+    {
+      "name": "Get All Products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/products",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["products"]
+        }
+      }
+    },
+    {
+      "name": "Get Products by Category",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/products/category/Apparel",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["products", "category", "Apparel"]
+        }
+      }
+    },
+    {
+      "name": "Get Products by Color",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/products/by-color/Black",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["products", "by-color", "Black"]
+        }
+      }
+    }
+  ]
+}
